@@ -1,38 +1,98 @@
-.App {
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  position: relative;
+  min-height: 90vh;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 1rem;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+nav ul {
+  list-style: none;
+  padding: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+nav ul li {
+  display: inline;
+  margin: 0 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+main {
+  padding: 2rem;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #333;
+  color: white;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+#info {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #f4f4f4;
+  padding: 1rem;
+  text-align: center;
+}
+
+/* imagen */
+.imagen-centrada {
   display: flex;
-  flex-direction: column;
+  justify-content: center;  /* Centra horizontalmente */
+  align-items: center;      /* Centra verticalmente */
+  height: 40vh;             /* Puedes ajustar la altura según tus necesidades */
+}
+
+.imagen-centrada ul {
+  list-style: none;  
+  padding: 0;
+  margin: 0;
+}
+
+.imagen-centrada li {
+  /* Asegura que el li ocupe todo el espacio disponible para centrar el contenido */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imagen-centrada img {
+  max-width: 100%; /* Asegura que la imagen no sobrepase el tamaño del contenedor */
+  height: 400px;
+}
+
+/* pop ups*/
+
+.image-and-messages {
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.message-left {
+  margin-right: 20px;
+  color: black;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.message-right {
+  margin-left: 20px;
+  color: black;
 }
